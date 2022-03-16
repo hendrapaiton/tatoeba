@@ -3,9 +3,11 @@ import { AppModule } from './app.module';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { svelteTemplateEngine } from './svelteTemplateEngine';
 import { Logger } from '@nestjs/common';
+import { join } from 'path';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
+  app.useStaticAssets(join(__dirname, '..', 'public'));
   app.engine('svelte', svelteTemplateEngine);
   app.setViewEngine('svelte');
 

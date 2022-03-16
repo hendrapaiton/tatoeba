@@ -8,5 +8,5 @@
 </svelte:head>
 
 <Layout>
-  <h1>{pesan}</h1>
+  <h1 class="display-1 text-primary">{pesan}</h1>
 </Layout>
