@@ -7,7 +7,7 @@
 - [x] NestJS Framework
 - [ ] Prisma ORM
 - [x] Svelte Frontend
-- [ ] Bootstrap CSS
+- [x] Bootstrap CSS
 - [ ] Passport Authentication
 
 ### Terima Kasih
